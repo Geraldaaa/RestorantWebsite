@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorant "Shija"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">Restorant "Shija"</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Kryefaqja</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Rezervo</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h1>Shijoni Kuzhinën Tonë të Shkëlqyer</h1>
+        <p>Përvojë e papërshkrueshme me ushqime të freskëta dhe shije autentike</p>
+        <a href="#reservation" class="btn">Rezervo Tani</a>
+    </div>
+</section>
+
+<section id="menu" class="menu">
+    <div class="container">
+        <h2>Menu Jona</h2>
+        <div class="menu-categories">
+            <button id="butoniTeGjitha" class="category-btn active">Të Gjitha</button>
+            <button id="butoniFillestar" class="category-btn">Fillestar</button>
+            <button id="butoniKryesor" class="category-btn">Kryesore</button>
+            <button id="butoniEmbelsira" class="category-btn">Ëmbëlsira</button>
+        </div>
+        <div class="menu-items" id="menuItems">
+            <!-- ushqimet shfaqen nga JS -->
+        </div>
+    </div>
+</section>
+
+<section id="reservation" class="reservation">
+    <div class="container">
+        <h2>Bëni Një Rezervim</h2>
+        <form id="formaRezervimit">
+            <div class="form-group">
+                <label for="emri">Emri i plotë:</label>
+                <input type="text" id="emri" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefoni:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Koha:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="persona">Numri i personave:</label>
+                <select id="persona" required>
+                    <option value="1">1 person</option>
+                    <option value="2">2 persona</option>
+                    <option value="3">3 persona</option>
+                    <option value="4">4 persona</option>
+                    <option value="5">5 persona</option>
+                    <option value="6">6+ persona</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mesazhiRezervimi">Mesazh shtesë (opsional):</label>
+                <textarea id="mesazhiRezervimi"></textarea>
+            </div>
+            <button type="submit" class="btn">Konfirmo Rezervimin</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Na Kontaktoni</h2>
+        <form id="formaKontaktit">
+            <div class="form-group">
+                <label for="emriKontaktit">Emri juaj:</label>
+                <input type="text" id="emriKontaktit" required>
+            </div>
+            <div class="form-group">
+                <label for="emailKontaktit">Email juaj:</label>
+                <input type="email" id="emailKontaktit" required>
+            </div>
+            <div class="form-group">
+                <label for="mesazhi">Mesazhi:</label>
+                <textarea id="mesazhi" required></textarea>
+            </div>
+            <button type="submit" class="btn">Dërgo Mesazhin</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Informacionet tona</h3>
+            <p><strong>Telefoni:</strong> +355 44444444444</p>
+            <p><strong>Email:</strong> info@shija.com</p>
+            <p><strong>Orari:</strong> E hënë - E diel: 10:00 - 23:00</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Restorant "Shija". Të gjitha të drejtat e rezervuara.</p>
+        <p>Adresa: Rruga Peti, Tirana | Telefon: +355 4X XXX XXXX</p>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
